@@ -13,6 +13,7 @@ public class Principal {
 
         FuncionesDeConversion funciones = new FuncionesDeConversion();
 
+        //Menú Principal
         while (menu) {
             System.out.println("***************************");
             System.out.println("1) Dolar  -- Peso Argentino");
@@ -79,6 +80,7 @@ public class Principal {
         }
     }
 
+    //Funcion verificación de valores
     private static double obtenerCantidadValida(Scanner teclado, String mensaje) {
         double cantidad = 0.0;
         boolean cantidadValida = false;
@@ -95,7 +97,7 @@ public class Principal {
 
         return cantidad;
     }
-
+    //Funcion verificación de continuación
     private static boolean verificarContinuar(Scanner teclado) {
         System.out.println("Continuar? 1)Si 2)No");
         int opcionContinuar = teclado.nextInt();

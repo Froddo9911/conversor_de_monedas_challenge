@@ -11,6 +11,7 @@ import java.net.http.HttpResponse;
 
 public class FuncionesDeConversion {
 
+    //Funciones de API
     public DatosDeRequest opcion1(double cantidadAConvertir){
         URI direccion = URI.create("https://v6.exchangerate-api.com/v6/2cbbbb289156c48eb7c81a06/pair/USD/ARS/" + cantidadAConvertir);
         HttpClient client = HttpClient.newHttpClient();
